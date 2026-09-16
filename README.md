@@ -119,3 +119,7 @@ Energy_Consumption_Analysis_System/
 ## Author
 
 Vivian Moyosore Gomes — Geoscientist | Python Study Group, Group A Team Captain| SmartBizCrux
+Collaborators
+Oseni Latifat
+Ismaila Ainoko Aminu
+Ositadinma Chigozie
