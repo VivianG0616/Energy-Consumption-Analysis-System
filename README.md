@@ -32,8 +32,8 @@ Basically, build a menu-driven Python system that takes electricity consumption 
 
 ## Industry Context
 
-Reliable, affordable electricity underpins healthcare, education, agriculture, and business activity. Nigeria's Rural Electrification Agency and programs such as the Nigeria Electrification Programme and DARES are actively working to expand access through mini-grids and distributed solar. Data analysis plays a supporting role in that effort: it's how organizations identify which customers or locations have unusually high consumption, low renewable share, or high electricity cost relative to income, and where energy-efficiency or renewable interventions would matter most.
-
+Reliable electricity supports businesses, schools, hospitals, agriculture, and households — when it's unavailable, unreliable, or unaffordable, the effects extend beyond the electricity sector. Nigeria's Rural Electrification Agency and programs such as the Nigeria Electrification Programme and DARES are actively working to expand access through mini-grids and distributed solar. This project's industry relevance spans several areas: energy planning (understanding demand across locations and customer groups), energy efficiency (flagging unusually high consumption), renewable energy planning (finding high-demand customers with low renewable share), infrastructure and access planning, electricity cost and affordability, business intelligence for utilities, and evidence-based decision-making more broadly. Data analysis plays a supporting role in that effort: it's how organizations identify which customers or locations have unusually high consumption, low renewable share, or high electricity cost relative to income, and where energy-efficiency or renewable interventions would matter most.
+ 
 ## Dataset
 
 - **20 simulated customer records**, each representing one customer's monthly electricity activity.
@@ -84,19 +84,30 @@ Reliable, affordable electricity underpins healthcare, education, agriculture, a
 
 ## Business Recommendations
 
-1. Prioritize the 4 flagged High-Attention customers for detailed energy-efficiency or renewable-integration review, since they combine the highest consumption with the lowest renewable share.
-2. Investigate the outage-consumption relationship further before drawing conclusions — lower recorded consumption during high-outage periods could reflect suppressed demand rather than genuinely lower need.
-3. Use the Efficiency Score, not just the consumption ranking, to prioritize interventions — it also accounts for renewable share and outage exposure, which the Top-10 list alone does not.
-4. Revisit the affordability model before using it operationally: applying one flat ₦150,000 income assumption to Industrial and commercial accounts (which are billed as businesses, not households) overstates their affordability burden.
-5. Treat monthly totals as descriptive only, not a real trend, until the dataset includes repeated monthly readings for the same customers.
-6. Expand data collection to 100+ records across multiple months per customer before using this system to support real planning or investment decisions.
+1. Promote energy-efficiency practices among high-consuming customers, encouraging adoption of efficient equipment to reduce unnecessary use and cost.
+2. Prioritize the 4 flagged High-Attention customers for detailed energy-efficiency or renewable-integration review, since they combine the highest consumption with the lowest renewable share.
+3. Promote energy-efficiency practices among high-consuming customers, encouraging adoption of efficient equipment to reduce unnecessary use and cost.
+4. Investigate why Industrial customers show such low renewable share relative to their consumption volume — this is where renewable-energy or solar interventions would likely have the most impact.
+5. Since High-classified customers (9) outnumber High-Attention flagged customers (4) by more than double, consider whether the attention rule should also catch large non-industrial consumers, such as hospitals, which are high-consumption but currently exempt because of their renewable share.
+6. Expand the location and customer-type breakdown into a cost view, not just a consumption view, to show whether high-consumption groups are also the highest-cost groups.
+7. Improve the dataset for future analysis — use a larger, more representative dataset covering a longer period, more customer records, and additional variables.
+8. Investigate the outage-consumption relationship further before drawing conclusions — lower recorded consumption during high-outage periods could reflect suppressed demand rather than genuinely lower need.
+9. Use the Efficiency Score, not just the consumption ranking, to prioritize interventions — it also accounts for renewable share and outage exposure, which the Top-10 list alone does not.
+10. Revisit the affordability model before using it operationally: applying one flat ₦150,000 income assumption to Industrial and commercial accounts (which are billed as businesses, not households) overstates their affordability burden.
 
 ## Limitations
 
-1. The dataset is simulated for instructional purposes and does not represent official Nigerian electricity statistics.
+1. The dataset is simulated for this analysis purposes and does not represent official Nigerian electricity statistics.
 2. Only 20 records span 6 months, with each customer appearing in a single month — this rules out any genuine month-over-month trend analysis for an individual customer.
-3. The affordability model assumes one flat monthly income (₦150,000) applied uniformly across all customer types, including commercial and industrial accounts, which does not reflect real income or billing structures.
-4. The outage-consumption comparison is based on a small sample (20 records split into two groups), which limits confidence in the conclusion.
+3. The attention-flag rule is a single fixed threshold (consumption ≥1,000 kWh and renewable share <15%), a reasonable starting rule but not validated against real utility risk criteria.
+4. The affordability model assumes one flat monthly income (₦150,000) applied uniformly across all customer types, including commercial and industrial accounts, which does not reflect real income or billing structures.
+5. The outage-consumption comparison is based on a small sample (20 records split into two groups), which limits confidence in the conclusion.
+   
+
+
+## Conclusion
+
+The Energy Consumption Analysis System successfully demonstrated how Python can be used to organize, process, and analyze electricity consumption data. Using a structured dataset of 20 customer records, the system calculated total and average electricity consumption, identified high- and low-consuming customers, classified customers by consumption level, compared consumption across locations and customer types, examined monthly consumption patterns, analyzed electricity cost, and identified customers requiring higher attention. Although developed using a small simulated dataset and basic Python programming concepts, the project demonstrates the value of data analysis in understanding energy-consumption patterns, and provides a foundation that can be expanded with larger datasets, additional variables, and more advanced analytical techniques.
 
 ## Future Improvements
 
@@ -111,6 +122,25 @@ Reliable, affordable electricity underpins healthcare, education, agriculture, a
 - Nested while-loop sub-menu for location + customer-type investigation.
 - Built-in data validation (duplicate IDs, missing fields, negative values, out-of-range values).
 - Efficiency Score, Top 10 customers (bubble sort), outage-vs-consumption comparison, and affordability classification as extended analyses.
+
+ ## Extended Analysis 
+
+The notebook also includes exploratory analyses built on the same 20-record dataset. These are flagged separatel for better explanation
+
+Efficiency Score (0–100): a composite score based on consumption band, renewable share, and outage exposure.
+Top 10 Customers: ranked by consumption using a bubble sort. The top 3 spots are all Industrial accounts, reinforcing Finding #1 above.
+Outage vs. Consumption: customers with fewer than 10 outage hours averaged 2,152 kWh, versus 898.67 kWh for customers with 10 or more outage hours — higher outage exposure corresponds with lower recorded consumption.
+Affordability Model: electricity cost as a percentage of an assumed ₦150,000 monthly income. 7 of 20 records (35%) fall into a "High Burden" category (cost above 100% of assumed income), including all 3 Industrial records.
+
+Notes on these results:
+
+The outage-consumption relationship is based on a small sample (20 records split into two groups) — worth investigating further before concluding it reflects suppressed demand rather than genuinely lower need.
+The affordability model applies one flat income assumption across all customer types, including Industrial and commercial accounts billed as businesses rather than households — this overstates their affordability burden and should be revisited (e.g. separate household-income and business-revenue variants) before being used operationally.
+System Features
+Menu-driven interface (13 options): view records, total/average consumption, highest/lowest consumer, electricity cost, classification, location analysis, customer-type analysis, monthly analysis, high-attention customers, and a full summary report.
+Nested while-loop sub-menu for location + customer-type investigation.
+Built-in data validation (duplicate IDs, missing fields, negative values, out-of-range values).
+Extended: Efficiency Score, Top 10 customers (bubble sort), outage-vs-consumption comparison, and affordability classification.
 
 ## Tech Stack
 
