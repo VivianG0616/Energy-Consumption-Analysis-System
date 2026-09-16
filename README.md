@@ -41,7 +41,7 @@ Reliable, affordable electricity underpins healthcare, education, agriculture, a
 - Customer types: Residential, SME, Industrial, Hospital, School, Agricultural.
 - Locations: Lagos, Abuja, Ibadan.
 - Months covered: January–June.
-- **This is a simulated instructional dataset**, embedded directly in the Python program as a list of dictionaries. It is not sourced from an official utility or regulator and should not be read as representing actual Nigerian electricity statistics.
+- **This is a simulated dataset**, embedded directly in the Python program as a list of dictionaries. It is not sourced from an official utility or regulator and should not be read as representing actual Nigerian electricity statistics.
 
 ### Data Dictionary
 
