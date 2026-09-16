@@ -142,6 +142,45 @@ Nested while-loop sub-menu for location + customer-type investigation.
 Built-in data validation (duplicate IDs, missing fields, negative values, out-of-range values).
 Extended: Efficiency Score, Top 10 customers (bubble sort), outage-vs-consumption comparison, and affordability classification.
 
+## Program Snippets
+Data Exploration
+<img width="693" height="637" alt="Image" src="https://github.com/user-attachments/assets/f6508fe5-551c-4bfa-934b-09804d48eaa2" />
+
+Location Analysis
+<img width="799" height="743" alt="Image" src="https://github.com/user-attachments/assets/32d19ec9-429b-48b1-98f0-7b9a0bcd87fe" />
+
+Customer Type and Monthly Analysis
+<img width="580" height="695" alt="Image" src="https://github.com/user-attachments/assets/35485835-e948-4ffe-85a9-bee0a19d83cc" />
+
+Validation
+
+<img width="544" height="684" alt="Image" src="https://github.com/user-attachments/assets/3e62bbb8-bbb5-4550-89fd-7cff968c41dd" />
+
+Functions
+<img width="597" height="732" alt="Image" src="https://github.com/user-attachments/assets/cda07520-b920-4776-a242-870c92fde04d" />
+
+<img width="810" height="657" alt="Image" src="https://github.com/user-attachments/assets/07b6d293-67a8-4730-a219-087250b77d13" />
+
+<img width="568" height="677" alt="Image" src="https://github.com/user-attachments/assets/2770e672-8ea4-4298-83a5-94cab1aa14ca" />
+
+<img width="539" height="641" alt="Image" src="https://github.com/user-attachments/assets/e14ce447-c5ca-40b4-848d-b3d055c9e689" />
+
+<img width="571" height="678" alt="Image" src="https://github.com/user-attachments/assets/7b6dd957-fd01-420a-87f0-12f38a79165d" />
+
+Extended Analysis
+
+<img width="825" height="715" alt="Image" src="https://github.com/user-attachments/assets/ff4fdcb4-132c-4559-be78-b9f90c321200" />
+
+<img width="761" height="699" alt="Image" src="https://github.com/user-attachments/assets/3e18dcd9-7b8f-4fb6-806d-89effeef0e7d" />
+
+<img width="748" height="682" alt="Image" src="https://github.com/user-attachments/assets/e1b07f58-3a48-4a87-9ff0-177ec7590d3a" />
+
+<img width="812" height="727" alt="Image" src="https://github.com/user-attachments/assets/822f0eaa-ec93-42b7-ac5a-36bc34ca820f" />
+
+<img width="752" height="692" alt="Image" src="https://github.com/user-attachments/assets/b2ceec7e-a39d-47a7-9fd7-14522207fd28" />
+
+<img width="802" height="745" alt="Image" src="https://github.com/user-attachments/assets/a93bf8d0-2572-4648-abd7-57c678e5c176" />
+
 ## Tech Stack
 
 - Python 3 (standard library only — no external packages)
@@ -152,8 +191,10 @@ Extended: Efficiency Score, Top 10 customers (bubble sort), outage-vs-consumptio
 Energy_Consumption_Analysis_System/
 │
 ├── README.md
-└── Energy_Consumption_Analysis_System.ipynb
-
+├── Energy_Consumption_Analysis_System.ipynb
+├── TEAM_A_-_ENERGY_CONSUMPTION_REPORT.docx
+└── screenshots/
+    
 ## How to Run
 
 1. Open `Energy_Consumption_Analysis_System.ipynb` in Jupyter Notebook or JupyterLab.
