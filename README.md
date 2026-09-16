@@ -222,5 +222,7 @@ Vivian Moyosore Gomes — Geoscientist | Python Study Group, Group A Team Captai
 
 ## Collaborators
 Oseni Latifat
+
 Ismaila Ainoko Aminu
+
 Ositadinma Chigozie
