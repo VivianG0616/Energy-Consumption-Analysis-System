@@ -4,7 +4,7 @@ A Python program that analyzes electricity consumption, cost, and usage patterns
 
 ## Problem Statement
 
-Africa faces a major electricity access and affordability gap. The IEA estimates around 600 million people in Africa still lack electricity access, and even where connections exist, affordability remains a major barrier. Closing that gap depends partly on organizations being able to understand *how* electricity is actually being consumed: by whom, where, how much it costs, and which customers need attention. Many organizations collecting consumption data don't have a simple system for turning those records into decision-useful insight.
+Africa faces a major electricity access and affordability gap. The IEA estimates around 600 million people in Africa still lack electricity access, and even where connections exist, affordability remains a major barrier. Nigeria illustrates this: substantial generation resources exist, yet availability and consumption don't always translate into reliable, affordable access for all users. Closing that gap depends partly on organizations being able to understand *how* electricity is actually being consumed: by whom, where, how much it costs, and which customers need attention. Many organizations collecting consumption data don't have a simple system for turning those records into decision-useful insight.  Without structured analysis, large volumes of consumption records remain individual data points rather than a clear picture of demand, customer segments, or cases needing further investigation.
 
 ## Project Objective
 
