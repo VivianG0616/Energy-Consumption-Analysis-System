@@ -8,7 +8,21 @@ Africa faces a major electricity access and affordability gap. The IEA estimates
 
 ## Project Objective
 
-Build a menu-driven Python system that takes electricity consumption records and answers practical analyst questions:
+The major aim of this project is to develop a Python-based Energy Consumption Analysis System that analyzes structured electricity-consumption records and provides useful insights into consumption, electricity cost, customer groups, locations, and usage patterns.
+
+Objectives:
+
+1. Structure electricity-consumption records using Python lists and dictionaries.
+2. Validate the dataset for missing IDs, invalid values, and inconsistent records.
+3. Calculate total, average, maximum, and minimum consumption.
+4. Analyze individual and overall electricity cost based on consumption and tariff.
+5. Classify customers by consumption level and identify highest/lowest consumers.
+6. Analyze consumption by location, customer type, and month.
+7. Identify high-attention customers using defined analytical criteria.
+8. Build an interactive menu system that runs until the user chooses to exit.
+9. Demonstrate Python fundamentals applied to an industry problem, as a foundation for a future CSV/Pandas upgrade.
+
+Basically, build a menu-driven Python system that takes electricity consumption records and answers practical analyst questions:
 
 - Who is consuming electricity, and how much?
 - How much does that consumption cost?
